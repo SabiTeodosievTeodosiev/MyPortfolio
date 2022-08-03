@@ -64,6 +64,9 @@ namespace MyPortfolio
 				endpoints.MapControllerRoute(
 					name: "default",
 					pattern: "{controller=Home}/{action=Index}/{id?}");
+				endpoints.MapControllerRoute(
+					name: "about",
+					pattern: "{controller=About}/{action=About}");
 				endpoints.MapRazorPages();
 			});
 		}
