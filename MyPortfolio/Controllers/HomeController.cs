@@ -1,14 +1,9 @@
-﻿namespace MyPortfolio.Controllers
-{
-	using Microsoft.AspNetCore.Mvc;
-	using Microsoft.Extensions.Logging;
-	using MyPortfolio.Models;
-	using System;
-	using System.Collections.Generic;
-	using System.Diagnostics;
-	using System.Linq;
-	using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
+using MyPortfolio.Models;
+using System.Diagnostics;
 
+namespace MyPortfolio.Controllers
+{
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
@@ -24,12 +19,6 @@
 		}
 
 		public IActionResult Privacy()
-		{
-			return View();
-		}
-
-		[Route("/About")]
-		public IActionResult About()
 		{
 			return View();
 		}
